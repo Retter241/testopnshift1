@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="modal fade" id="headerButton" tabindex="-1" role="dialog" aria-labelledby="headerButtonLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="modal-title" id="headerButtonLabel">Заказать звонок</div>
+            </div>
+            <div class="modal-body">
+                <form action="" method="post">
+                    <div class="form-group col-md-13">
+                        <input type="text" class="form-control" placeholder="Ваше имя">
+                    </div>
+                    <div class="form-group col-md-13">
+                        <input type="tel" class="form-control" placeholder="Телефон*">
+                    </div>
+                    <div class="form-group text-center">
+                        <button type="submit" class="button button-submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header affix-header">
+    <div class="container">
+        <div class="row header__wrap">
+            <div class="col-lg-3 col-md-3 col-xs-4">
+                <div class="header__logo">
+                    <a class="header__link" href="/"></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 hidden-sm hidden-xs">
+                <div class="header__place font_light">Минск, Тимирязева, 123/2, ТЦ “Град”, пав.229</div>
+                <div class="header__time font_light">Время работы: вт - вскр, 10<sup>00</sup>-19<sup>00</sup></div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6">
+                <div class="row">
+                    <div class="col-lg-9 col-md-8">
+                        <a href="tel:+375291919393" class="font_light link header__phone">+37529 1919393</a>
+                        <a href="mailto:salon@lacasa.by" class="header__mail font_light link hidden-sm hidden-xs">salon@lacasa.by</a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 hidden-sm hidden-xs">
+                        <a href="" target="_blank" class="insta link">
+                            <object data="/assets/img/insta_green.svg" type="image/svg+xml" class="insta__img"></object>
+                        </a>
+                        <a href="" target="_blank" class="fb link">
+                            <object data="/assets/img/fb_green.svg" type="image/svg+xml" class="fb__img"></object>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-1 hidden-sm hidden-xs">
+                <button type="button" class="button header__button" data-toggle="modal" data-target="#headerButton">Заказать звонок</button>
+            </div>
+            <div class="col-xs-1 hidden-lg hidden-md">
+                <button class="button header__menu"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="mobile-menu hidden-lg hidden-md">
+        <div class="mobile-menu__inner">
+            <ul class="list-unstyled mobile-menu__pages">
+                <li class="mobile-menu__category">
+                    <a href="" class="mobile-menu__link link">Каталог</a>
+                    <span class="mobile-menu__ico mob-catalog"></span>
+                    <ul class="list-unstyled mobile-menu__submenu">
+                        <li class="mobile-menu__subitem"><a href="" class="mobile-menu__sublink link">МЕЖКОМНАТНЫЕ ДВЕРИ</a></li>
+                        <li class="mobile-menu__subitem"><a href="" class="mobile-menu__sublink link">МЕБЕЛЬ</a></li>
+                        <li class="mobile-menu__subitem"><a href="" class="mobile-menu__sublink link">ПАРКЕТНАЯ ДОСКА</a></li>
+                        <li class="mobile-menu__subitem"><a href="" class="mobile-menu__sublink link">СТЕнОВЫЕ ПАНЕЛИ</a></li>
+                        <li class="mobile-menu__subitem"><a href="" class="mobile-menu__sublink link">ФУРНИТУРА</a></li>
+                        <li class="mobile-menu__subitem"><a href="" class="mobile-menu__sublink link">НАШИ РАБОТЫ</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__category">
+                    <a href="" class="mobile-menu__link link">Фотогалерея</a>
+                    <span class="mobile-menu__ico mob-gallery"></span>
+                </li>
+                <li class="mobile-menu__category">
+                    <a href="" class="mobile-menu__link link">Услуги</a>
+                    <span class="mobile-menu__ico mob-services"></span>
+                </li>
+                <li class="mobile-menu__category">
+                    <a href="" class="mobile-menu__link link">Контакты</a>
+                    <span class="mobile-menu__ico mob-contact"></span>
+                </li>
+            </ul>
+            <ul class="list-unstyled mobile-menu__contacts">
+                <li class="mobile-menu__contact">
+                    <a href="tel:+375291919393" class="mobile-menu__link link">+37529 1919393</a>
+                    <span class="mobile-menu__ico mob-phone"></span>
+                </li>
+                <li class="mobile-menu__contact">
+                    <a href="mailto:salon@lacasa.by" class="mobile-menu__link link">salon@lacasa.by</a>
+                    <span class="mobile-menu__ico mob-mail"></span>
+                </li>
+            </ul>
+            <ul class="list-unstyled mobile-menu__socials">
+                <li class="mobile-menu__social">
+                    <a href="" target="_blank" class="mobile-menu__link link">Мы в Instagram</a>
+                    <span class="mobile-menu__ico mob-insta"></span>
+                </li>
+                <li class="mobile-menu__social">
+                    <a href="" target="_blank" class="mobile-menu__link link">Мы в Facebook</a>
+                    <span class="mobile-menu__ico mob-fb"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row flb">
+            <div class="content__main content_full">
+                <ul class="crumbs list-inline">
+                    <li class="crumbs__item"><a class="crumbs__link" href="/">Главная</a></li>&gt;
+                    <li class="crumbs__item">Наши выполненные работы</li>
+                </ul>
+                <h1 class="page-title">Наши выполненные работы</h1>
+                <div class="cards cards_center">
+                    <a class="cards__link" href="">
+                        <img class="cards__link-img" src="/assets/img/door.jpg" alt="">
+                        <span class="cards__bottom">
+                                <div class="cards__label">Межкомнатные двери</div>
+                            </span>
+                    </a>
+                    <a class="cards__link" href="">
+                        <img class="cards__link-img" src="/assets/img/furniture.jpg" alt="">
+                        <span class="cards__bottom">
+                                <div class="cards__label">Мебель</div>
+                            </span>
+                    </a>
+                    <a class="cards__link" href="">
+                        <img class="cards__link-img" src="/assets/img/door.jpg" alt="">
+                        <span class="cards__bottom">
+                                <div class="cards__label">Стеклянные панели</div>
+                            </span>
+                    </a>
+                    <a class="cards__link" href="">
+                        <img class="cards__link-img" src="/assets/img/furniture.jpg" alt="">
+                        <span class="cards__bottom">
+                                <div class="cards__label">Раздвижные панели</div>
+                            </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+                <div class="footer__logo">
+                    <div class="footer__link"></div>
+                    <div class="footer__copy">2016. Все права защищены.</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-3 hidden-sm hidden-xs">
+                <div class="footer__menublock">
+                    <div class="footer__list-title">Меню</div>
+                    <ul class="list-unstyled footer__menu">
+                        <li class="footer__item"><a href="" class="footer__menu-link link">Каталог</a></li>
+                        <li class="footer__item"><a href="" class="footer__menu-link link">Фотогалерея</a></li>
+                        <li class="footer__item"><a href="" class="footer__menu-link link">Услуги</a></li>
+                        <li class="footer__item"><a href="" class="footer__menu-link link">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__menublock">
+                    <div class="footer__list-title">Каталог</div>
+                    <ul class="list-unstyled footer__menu">
+                        <li class="footer__item"><a href="" class="footer__menu-link link">Межкомнатные двери</a></li>
+                        <li class="footer__item"><a href="" class="footer__menu-link link">Раздвижные двери</a></li>
+                        <li class="footer__item"><a href="" class="footer__menu-link link">Мебель</a></li>
+                        <li class="footer__item"><a href="" class="footer__menu-link link">Фурнитура</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-7">
+                <div class="footer__place font_light">Тимирязева, 123/2, ТЦ “Град”, пав.229</div>
+                <div class="footer__time font_light">Время работы: вт - вскр с 10<sup>00</sup> до 19<sup>00</sup></div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-xs-5">
+                <a href="tel:+375291919393" class="footer__phone link">+37529 1919393</a>
+                <a href="mailto:salon@lacasa.by" class="footer__mail link">salon@lacasa.by</a>
+            </div>
+            <div class="footer__social hidden-sm hidden-xs">
+                <a href="" target="_blank" class="insta link">
+                    <object data="/assets/img/insta_footer.svg" type="image/svg+xml" class="insta__img"></object>
+                </a>
+                <a href="" target="_blank" class="fb link">
+                    <object data="/assets/img/fb_footer.svg" type="image/svg+xml" class="fb__img"></object>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
