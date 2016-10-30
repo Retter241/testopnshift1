@@ -29765,19 +29765,21 @@ if ( eventCaptureSupported ) {
 
 ;
 (function ($) {
-    var o = $('.main-slider');
-    if (o.length > 0) {
-        o.owlCarousel({
-            autoplay:true,
-            items: 1,
-            loop: true,
+    $(document).ready(function () {
+        var o = $('.main-slider');
+        if (o.length > 0) {
+            o.owlCarousel({
+                autoplay:true,
+                items: 1,
+                loop: true,
+            });
+        }
+        $('.owl-next').click(function () {
+            o.trigger('next.owl.carousel', [400]);
         });
-    }
-    $('.owl-next').click(function () {
-        o.trigger('next.owl.carousel', [400]);
-    });
-    $('.owl-prev').click(function () {
-        o.trigger('prev.owl.carousel', [400]);
+        $('.owl-prev').click(function () {
+            o.trigger('prev.owl.carousel', [400]);
+        });
     });
 })(jQuery)
 
@@ -29853,27 +29855,29 @@ if ( eventCaptureSupported ) {
 ;
 (function ($) {
     $(document).ready(function () {
-        $('#gallery').unitegallery({
-            gallery_theme: "tiles",
-            tiles_type: "justified",
-            tiles_justified_row_height: 200,
-            tiles_justified_space_between: 0,
-            lightbox_textpanel_enable_description: true,
-            lightbox_overlay_color: '#172318',
-            lightbox_overlay_opacity: 0.8,
-            lightbox_textpanel_title_color: '#fff',
-            lightbox_textpanel_title_text_align: 'center',
-            lightbox_textpanel_title_font_size: '28px',
-            lightbox_textpanel_css_title:{
-                'font-size': '26px',
-                'padding': '15px 0'
-            },
-            lightbox_textpanel_desc_color: '#fff',
-            lightbox_textpanel_desc_text_align: 'center',
-            lightbox_textpanel_desc_font_size: '20px',
-            lightbox_textpanel_css_description:{
-                'font-size': '18px'
-            }
-        });
+        var o = $('#gallery');
+        if (o.length > 0) {
+            o.unitegallery({
+                gallery_theme: "tiles",
+                tiles_type: "nested",
+                tiles_nested_optimal_tile_width: 350,
+                lightbox_textpanel_enable_description: true,
+                lightbox_overlay_color: '#172318',
+                lightbox_overlay_opacity: 0.8,
+                lightbox_textpanel_title_color: '#fff',
+                lightbox_textpanel_title_text_align: 'center',
+                lightbox_textpanel_title_font_size: '28px',
+                lightbox_textpanel_css_title:{
+                    'font-size': '26px',
+                    'padding': '15px 0'
+                },
+                lightbox_textpanel_desc_color: '#fff',
+                lightbox_textpanel_desc_text_align: 'center',
+                lightbox_textpanel_desc_font_size: '20px',
+                lightbox_textpanel_css_description:{
+                    'font-size': '18px'
+                }
+            });
+        }
     });
 })(jQuery);
