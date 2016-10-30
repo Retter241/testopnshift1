@@ -58,10 +58,10 @@ jspm_packages
 /core/import/*
 /core/export/*
 
-./config.core.php
-./connectors/config.core.php
-./core/config/config.inc.php
-./manager/config.core.php
+/config.core.php
+/connectors/config.core.php
+/core/config/config.inc.php
+/manager/config.core.php
 
 ### Linux ###
 *~
