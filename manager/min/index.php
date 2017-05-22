@@ -13,7 +13,7 @@ if(!isset($_SERVER['DOCUMENT_ROOT']) || empty($_SERVER['DOCUMENT_ROOT'])) {
 }
 
 /* include the modX class */
-if (!(include_once MODX_CORE_PATH . 'model/modx/modx.class.php')) {
+if (!(include_once 'E:/openserver/OpenServer/domains/lacasa/core/model/modx/modx.class.php')) {
     include MODX_CORE_PATH . 'error/unavailable.include.php';
     die('Site temporarily unavailable!');
 }

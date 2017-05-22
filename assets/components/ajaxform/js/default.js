@@ -4,13 +4,13 @@ var AjaxForm = {
         if (!jQuery().ajaxForm) {
             document.write('<script src="' + afConfig['assetsUrl'] + 'js/lib/jquery.form.min.js"><\/script>');
         }
-        if (!jQuery().jGrowl) {
+        /*if (!jQuery().jGrowl) {
             document.write('<script src="' + afConfig['assetsUrl'] + 'js/lib/jquery.jgrowl.min.js"><\/script>');
-        }
+        }*/
 
-        $(document).ready(function () {
+        /*$(document).ready(function () {
             $.jGrowl.defaults.closerTemplate = '<div>[ ' + afConfig['closeMessage'] + ' ]</div>';
-        });
+        });*/
 
         $(document).on('submit', afConfig['formSelector'], function (e) {
             $(this).ajaxSubmit({
@@ -44,7 +44,6 @@ var AjaxForm = {
                     response.form = form;
                     $(document).trigger('af_complete', response);
                     if (!response.success) {
-                        AjaxForm.Message.error(response.message);
                         if (response.data) {
                             var key, value, focused;
                             for (key in response.data) {
@@ -56,14 +55,16 @@ var AjaxForm = {
                                     value = response.data[key];
                                     form.find('.error_' + key).html(value).addClass('error');
                                     form.find('[name="' + key + '"]').addClass('error');
+									form.find('[name="' + key + '"]').after(value);
                                 }
                             }
                         }
                     }
                     else {
-                        AjaxForm.Message.success(response.message);
+                        //AjaxForm.Message.success(response.message);
                         form.find('.error').removeClass('error');
                         form[0].reset();
+						form.html('<div class="row"><div class="form-group col-md-13"><p>'+response.message+'</p></div></div>');
                         //noinspection JSUnresolvedVariable
                         if (typeof(grecaptcha) != 'undefined') {
                             //noinspection JSUnresolvedVariable
@@ -84,40 +85,7 @@ var AjaxForm = {
 
         $(document).on('reset', afConfig['formSelector'], function () {
             $(this).find('.error').html('');
-            AjaxForm.Message.close();
         });
     }
 
-};
-
-
-//noinspection JSUnusedGlobalSymbols
-AjaxForm.Message = {
-    success: function (message, sticky) {
-        if (message) {
-            if (!sticky) {
-                sticky = false;
-            }
-            $.jGrowl(message, {theme: 'af-message-success', sticky: sticky});
-        }
-    },
-    error: function (message, sticky) {
-        if (message) {
-            if (!sticky) {
-                sticky = false;
-            }
-            $.jGrowl(message, {theme: 'af-message-error', sticky: sticky});
-        }
-    },
-    info: function (message, sticky) {
-        if (message) {
-            if (!sticky) {
-                sticky = false;
-            }
-            $.jGrowl(message, {theme: 'af-message-info', sticky: sticky});
-        }
-    },
-    close: function () {
-        $.jGrowl('close');
-    },
 };
