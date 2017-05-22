@@ -1,0 +1,56 @@
+[2017-05-23 00:06:40] (ERROR @ E:\openserver\OpenServer\domains\lacasa\core\xpdo\om\xpdoobject.class.php : 240) Error HY000 executing statement: 
+Array
+(
+    [0] => HY000
+    [1] => 3065
+    [2] => Expression #1 of ORDER BY clause is not in SELECT list, references column 'lacasa.tvtpl.rank' which is not in SELECT list; this is incompatible with DISTINCT
+)
+
+[2017-05-23 00:12:22] (ERROR @ E:\openserver\OpenServer\domains\lacasa\core\xpdo\om\xpdoobject.class.php : 240) Error HY000 executing statement: 
+Array
+(
+    [0] => HY000
+    [1] => 3065
+    [2] => Expression #1 of ORDER BY clause is not in SELECT list, references column 'lacasa.tvtpl.rank' which is not in SELECT list; this is incompatible with DISTINCT
+)
+
+[2017-05-23 00:12:25] (ERROR @ E:\openserver\OpenServer\domains\lacasa\core\xpdo\om\xpdoobject.class.php : 240) Error HY000 executing statement: 
+Array
+(
+    [0] => HY000
+    [1] => 3065
+    [2] => Expression #1 of ORDER BY clause is not in SELECT list, references column 'lacasa.tvtpl.rank' which is not in SELECT list; this is incompatible with DISTINCT
+)
+
+[2017-05-23 00:12:43] (ERROR @ E:\openserver\OpenServer\domains\lacasa\core\xpdo\om\xpdoobject.class.php : 240) Error HY000 executing statement: 
+Array
+(
+    [0] => HY000
+    [1] => 3065
+    [2] => Expression #1 of ORDER BY clause is not in SELECT list, references column 'lacasa.tvtpl.rank' which is not in SELECT list; this is incompatible with DISTINCT
+)
+
+[2017-05-23 00:12:45] (ERROR @ E:\openserver\OpenServer\domains\lacasa\core\xpdo\om\xpdoobject.class.php : 240) Error HY000 executing statement: 
+Array
+(
+    [0] => HY000
+    [1] => 3065
+    [2] => Expression #1 of ORDER BY clause is not in SELECT list, references column 'lacasa.tvtpl.rank' which is not in SELECT list; this is incompatible with DISTINCT
+)
+
+[2017-05-23 00:12:50] (ERROR @ E:\openserver\OpenServer\domains\lacasa\core\xpdo\om\xpdoobject.class.php : 240) Error HY000 executing statement: 
+Array
+(
+    [0] => HY000
+    [1] => 3065
+    [2] => Expression #1 of ORDER BY clause is not in SELECT list, references column 'lacasa.tvtpl.rank' which is not in SELECT list; this is incompatible with DISTINCT
+)
+
+[2017-05-23 00:17:09] (ERROR @ E:\openserver\OpenServer\domains\lacasa\core\xpdo\om\xpdoobject.class.php : 240) Error HY000 executing statement: 
+Array
+(
+    [0] => HY000
+    [1] => 3065
+    [2] => Expression #1 of ORDER BY clause is not in SELECT list, references column 'lacasa.tvtpl.rank' which is not in SELECT list; this is incompatible with DISTINCT
+)
+
